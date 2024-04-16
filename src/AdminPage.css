@@ -1,0 +1,43 @@
+.admin-panel {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .admin-panel h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .admin-panel h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .admin-panel h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .admin-panel input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .admin-panel button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Додамо вертикальний відступ між питаннями */
+  .admin-panel > ul > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  

@@ -1,20 +1,29 @@
+// App.js
+
 import React from 'react';
-import './App.css'; // Якщо у вас є стилі для додатка
-import TestForm from './TestForm'; // Імпортуємо компонент TestForm з іншого файлу
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import TestForm from './TestForm'; 
+import AdminPage from './AdminPage'; 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Ваша програма з тестами</h1>
-      </header>
-      <main>
-        <TestForm /> {/* Вставляємо компонент TestForm тут */}
-      </main>
-      <footer>
-        <p>&copy; 2024 Ваша компанія</p>
-      </footer>
-    </div>
+    <Router>
+      <div className="App">
+        <header className="App-header">
+          <h1>Павлів Феі-21</h1>
+        </header>
+        <main>
+          <Routes>
+            <Route path="/admin" element={<AdminPage />} />
+            <Route path="/" element={<TestForm />} />
+          </Routes>
+        </main>
+        <footer>
+          <p>&copy; 2024 ЛНУ ФЕЛКТ</p>
+        </footer>
+      </div>
+    </Router>
   );
 }
 
